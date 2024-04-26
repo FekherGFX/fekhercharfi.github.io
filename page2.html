@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+    <title>FekherGFX</title>
+    <meta charset="utf-8" name="author" content="Fekher Charfi">
+    <meta name="description" content="Cette page représente mon blog personnel & mon portfolio en tant que designer graphique">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a> 
+            <a class="button" href="index.html">Accueil</a>
+            <a class="button" href="page1.html">Portfolio</a>
+            <a class="button" href="page3.html">Tarifs</a>
+            <a class="button" href="page2.html">Contact</a>
+        </nav>
+        <section id="purple_bar">
+        </section>
+    </header>
+
+    <section class="container">
+        <form action="process_form.php" method="POST">
+            <div class="form-group">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="adresse">Adresse:</label>
+                <textarea id="adresse" name="adresse" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="demande">Demande:</label>
+                <textarea id="demande" name="demande" rows="4" required></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>    
+    <footer>
+        All copyrights reserved 2024 © - FekherGFX
+    </footer>
+</body>
+</html>
