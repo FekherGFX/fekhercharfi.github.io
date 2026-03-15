@@ -1,25 +1,35 @@
 /* ==========================
    RESET & TYPOGRAPHIE
 ========================== */
+
+/* Google Fonts version (recommended) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Optional local fallback if you still have font files */
 @font-face {
     font-family: 'Montserrat';
-    src: url('polices/Montserrat-Regular.ttf') format('truetype');
-    font-weight: normal;
+    src: url('polices/Montserrat-Regular.woff2') format('woff2'),
+         url('polices/Montserrat-Regular.woff') format('woff'),
+         url('polices/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('polices/Montserrat-Bold.ttf') format('truetype');
-    font-weight: bold;
+    src: url('polices/Montserrat-Bold.woff2') format('woff2'),
+         url('polices/Montserrat-Bold.woff') format('woff'),
+         url('polices/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Montserrat',sans-serif;
+/* Apply font globally */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html {
