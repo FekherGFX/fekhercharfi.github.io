@@ -1,8 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
 }
 
 html {
@@ -64,16 +64,41 @@ nav ul li a:hover {
 }
 
 .accueil{
-    height: 60vh;
+    position:relative;
+    height:60vh;
     display:flex;
-    flex-direction:column;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
     text-align:center;
-    background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));
-    background-size:cover;
-    background-position:center;
     color:white;
+    overflow:hidden;
+}
+
+.video_arriere_plan{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-2;
+    filter: hue-rotate(0deg) saturate(0%) brightness(0.7);
+}
+
+.accueil::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+    z-index:-1;
+}
+
+.contenu_accueil{
+    position:relative;
+    z-index:1;
 }
 
 .accueil h1{
@@ -450,4 +475,23 @@ button{
 button:hover{
     background:#6e1731;
     transform:scale(1.05);
+}
+
+.piste_audio{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    background:#f4f7f8;
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+}
+
+.piste_audio span{
+    font-weight:600;
+    color:#1e7f8a;
+}
+
+audio{
+    width:220px;
 }
