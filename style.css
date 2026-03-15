@@ -1,6 +1,20 @@
 /* ==========================
    RESET & TYPOGRAPHIE
 ========================== */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('polices/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('polices/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 *{
     margin:0;
     padding:0;
