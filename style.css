@@ -1,30 +1,3 @@
-/* ==========================
-   RESET & TYPOGRAPHIE
-========================== */
-
-/* Google Fonts version (recommended) */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-/* Optional local fallback if you still have font files */
-@font-face {
-    font-family: 'Montserrat';
-    src: url('polices/Montserrat-Regular.woff2') format('woff2'),
-         url('polices/Montserrat-Regular.woff') format('woff'),
-         url('polices/Montserrat-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('polices/Montserrat-Bold.woff2') format('woff2'),
-         url('polices/Montserrat-Bold.woff') format('woff'),
-         url('polices/Montserrat-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-/* Apply font globally */
 * {
     margin: 0;
     padding: 0;
@@ -42,9 +15,6 @@ body{
     line-height:1.6;
 }
 
-/* ==========================
-   HEADER & NAVIGATION
-========================== */
 header{
     background:linear-gradient(rgba(46,196,199,1),rgba(26,181,183,1));
     padding:20px 0;
@@ -93,9 +63,6 @@ nav ul li a:hover {
     transform: scale(1.05);    
 }
 
-/* ==========================
-   ACCUEIL
-========================== */
 .accueil{
     height: 60vh;
     display:flex;
@@ -132,9 +99,6 @@ nav ul li a:hover {
     background: #6e1731;
 }
 
-/* ==========================
-   SECTIONS
-========================== */
 section{
     padding:60px 10%;
     display: flex;
@@ -149,9 +113,6 @@ section h1{
     color:#1e7f8a;
 }
 
-/* ==========================
-   PRESENTATION
-========================== */
 .presentation{
     display:flex;
     width:100%;
@@ -185,9 +146,6 @@ section h1{
     transition: 0.3s ease;   
 }
 
-/* ==========================
-   PROJETS ET PHOTOGRAPHIE
-========================== */
 .liste_projets, .liste_photos {
     display: flex;
     flex-wrap: wrap;
@@ -255,9 +213,6 @@ section h1{
     transform: scale(1.05);
 }
 
-/* ==========================
-   FOOTER
-========================== */
 footer{
     background:#1e7f8a;
     color:white;
@@ -267,9 +222,6 @@ footer{
     font-size:14px;
 }
 
-/* ==========================
-   À PROPOS
-========================== */
 .section_apropos{
     display:flex;
     align-items:center;
@@ -327,7 +279,6 @@ footer{
     margin-bottom:20px;
 }
 
-/* PASSIONS */
 .passions{
     display:flex;
     gap:20px;
@@ -342,7 +293,6 @@ footer{
     font-weight:600;
 }
 
-/* CHRONOLOGIE */
 .chronologie{
     display:flex;
     flex-direction:column;
@@ -358,7 +308,6 @@ footer{
     margin-top:5px;
 }
 
-/* EXPERIENCE FREELANCE */
 .experience_freelance{
     list-style:none;
     display:flex;
@@ -366,7 +315,6 @@ footer{
     gap:10px;
 }
 
-/* MUSIQUE PREFEREE */
 .musique_preferee{
     display:flex;
     gap:20px;
@@ -381,9 +329,6 @@ footer{
     font-weight:600;
 }
 
-/* ==========================
-   GRILLES PROJETS ET PHOTOS
-========================== */
 .grille_projets{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -440,9 +385,6 @@ footer{
     filter:brightness(1);
 }
 
-/* ==========================
-   PAGE TARIFS
-========================== */
 table{
     width:100%;
     border-collapse:collapse;
@@ -470,9 +412,6 @@ tr:hover{
     background:#f5fbfb;
 }
 
-/* ==========================
-   PAGE CONTACT
-========================== */
 form{
     max-width:600px;
     margin:auto;
